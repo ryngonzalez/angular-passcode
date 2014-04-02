@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ngPasscode Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="passcode.js"></script>
+  <script type="text/javascript">
+    
+    angular.module('myApp', ['ngPasscode']).controller('myController', function($scope){
+      $scope.passcode = '';
+    });
+
+  </script>
+  <style>
+    .passcode {
+      text-align: center;
+    }
+
+    .passcode > input {
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      color: #333;
+      height: 40px;
+      width: 40px;
+      border: 1px solid #aaa;
+      box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2);
+      margin: 4px;
+      font-size: 18px;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+    }
+
+  </style>
+</head>
+<body ng-app="myApp">
+  <h1>ngPasscode</h1>
+  <h2>A passcode input element, for angular.js</h2>
+  <div class="container" ng-controller="myController">
+    <passcode placeholder="0" model="passcode" size="4"></passcode>
+    <h3>
+      Current passcode: 
+      <span class="wrapper">&lsquo;<span class="passcode-value" ng-bind="passcode"></span>&rsquo;</span>
+    </h3>
+  </div>
+  <footer>
+    <p>@ryngonzalez on <a href="https://github.com/ryngonzalez">GitHub</a> and <a href="http://twitter.com/ryngonzalez">Twitter</a>. &copy; 2014.</p>
+  </footer>
+</body>
+</html>
