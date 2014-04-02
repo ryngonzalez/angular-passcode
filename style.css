@@ -9,10 +9,10 @@ body {
 h1, h2 {
   color: white;
   text-shadow: 0px 1px 4px rgba(0,0,0,0.6);
-  -webkit-animation: slide 1500ms; /* Safari 4+ */
-  -moz-animation:    slide 1500ms; /* Fx 5+ */
-  -o-animation:      slide 1500ms; /* Opera 12+ */
-  animation:         slide 1500ms; /* IE 10+ */
+  -webkit-animation: slide 1000ms ease-in-out; /* Safari 4+ */
+  -moz-animation:    slide 1000ms ease-in-out; /* Fx 5+ */
+  -o-animation:      slide 1000ms ease-in-out; /* Opera 12+ */
+  animation:         slide 1000ms ease-in-out; /* IE 10+ */
 
 }
 
@@ -56,10 +56,10 @@ h3 {
   margin: auto;
   padding: 20px;
   top: 0; right: 0; bottom: 0; left: 0;
-  -webkit-animation: slide 2000ms 1500ms both; /* Safari 4+ */
-  -moz-animation:    slide 2000ms 1500ms both; /* Fx 5+ */
-  -o-animation:      slide 2000ms 1500ms both; /* Opera 12+ */
-  animation:         slide 2000ms 1500ms both; /* IE 10+ */
+  -webkit-animation: slide 1500ms 1000ms both ease-in-out; /* Safari 4+ */
+  -moz-animation:    slide 1500ms 1000ms both ease-in-out; /* Fx 5+ */
+  -o-animation:      slide 1500ms 1000ms both ease-in-out; /* Opera 12+ */
+  animation:         slide 1500ms 1000ms both ease-in-out; /* IE 10+ */
 
 }
 
