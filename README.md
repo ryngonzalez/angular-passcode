@@ -47,4 +47,4 @@ You can even set the properties on the template itself, if you know you're not g
 
 ![](http://i.imgur.com/tBnthdh.png)
 
-You can check it out on [GitHub Pages](ryngonzalez.github.io/ngPasscode).
+You can check it out on [GitHub Pages](http://ryngonzalez.github.io/ngPasscode).
