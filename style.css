@@ -9,10 +9,10 @@ body {
 h1, h2 {
   color: white;
   text-shadow: 0px 1px 4px rgba(0,0,0,0.6);
-  -webkit-animation: bounce 1000ms; /* Safari 4+ */
-  -moz-animation:    bounce 1000ms; /* Fx 5+ */
-  -o-animation:      bounce 1000ms; /* Opera 12+ */
-  animation:         bounce 1000ms; /* IE 10+ */
+  -webkit-animation: slide 1500ms; /* Safari 4+ */
+  -moz-animation:    slide 1500ms; /* Fx 5+ */
+  -o-animation:      slide 1500ms; /* Opera 12+ */
+  animation:         slide 1500ms; /* IE 10+ */
 
 }
 
@@ -56,7 +56,11 @@ h3 {
   margin: auto;
   padding: 20px;
   top: 0; right: 0; bottom: 0; left: 0;
-  
+  -webkit-animation: slide 2000ms 1500ms both; /* Safari 4+ */
+  -moz-animation:    slide 2000ms 1500ms both; /* Fx 5+ */
+  -o-animation:      slide 2000ms 1500ms both; /* Opera 12+ */
+  animation:         slide 2000ms 1500ms both; /* IE 10+ */
+
 }
 
 footer {
@@ -72,31 +76,19 @@ a {
   color: #78ab52;
 }
 
-@-webkit-keyframes bounce {
-  0%         { -webkit-transform: scale(0);    opacity: 0;}
-  20%        { -webkit-transform: scale(1.05);  }
-  40%        { -webkit-transform: scale(0.8);  }
-  75%        { -webkit-transform: scale(1.02); }
-  25%, 100%  { -webkit-transform: scale(1.0);  opacity: 1;}
+@-webkit-keyframes slide {
+  0%    { -webkit-transform: translate3d(0,-100%,0); opacity: 0;}
+  100%  { -webkit-transform: translate3d(0,0,0);  opacity: 1;}
 }
-@-moz-keyframes bounce {
-  0%         { -moz-transform: scale(0);    opacity: 0;}
-  20%        { -moz-transform: scale(1.05);  }
-  40%        { -moz-transform: scale(0.8);  }
-  75%        { -moz-transform: scale(1.02); }
-  25%, 100%  { -moz-transform: scale(1.0);  opacity: 1;}
+@-moz-keyframes slide {
+  0%    { -moz-transform: translate3d(0,-100%,0); opacity: 0;}
+  100%  { -moz-transform: translate3d(0,0,0);  opacity: 1;}
 }
-@-o-keyframes bounce {
-  0%         { -o-transform: scale(0);    opacity: 0;}
-  20%        { -o-transform: scale(1.05);  }
-  40%        { -o-transform: scale(0.8);  }
-  75%        { -o-transform: scale(1.02); }
-  25%, 100%  { -o-transform: scale(1.0);  opacity: 1;}
+@-o-keyframes slide {
+  0%    { -o-transform: translate3d(0,-100%,0); opacity: 0;}
+  100%  { -o-transform: translate3d(0,0,0);  opacity: 1;}
 }
-@keyframes bounce {
-  0%         { transform: scale(0);    opacity: 0;}
-  20%        { transform: scale(1.05);  }
-  40%        { transform: scale(0.8);  }
-  75%        { transform: scale(1.02); }
-  25%, 100%  { transform: scale(1.0);  opacity: 1;}
+@keyframes slide {
+  0%    { transform: translate3d(0,-100%,0); opacity: 0;}
+  100%  { transform: translate3d(0,0,0);  opacity: 1;}
 }
