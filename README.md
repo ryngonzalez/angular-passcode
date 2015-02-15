@@ -1,4 +1,4 @@
-# ngPasscode
+# angular-passcode
 An arbitrary length, numeric passcode input element, for Angular.js. Automatically moves you to the next input after you input a numeric value, enforces one character per input field, and adjusts to the size of the passcode needed.
 
 ### Usage
